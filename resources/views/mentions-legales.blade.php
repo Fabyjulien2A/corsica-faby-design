@@ -1,6 +1,10 @@
 @extends('layouts.app') {{-- ou adapte selon ton layout --}}
 @section('title', 'Mentions légales')
 
+@section('title', 'Mentions légales | Corsica Faby Design')
+@section('meta_description', 'Consultez les informations légales concernant le site Corsica Faby Design et son éditeur.')
+
+
 @section('content')
 <section class="max-w-4xl mx-auto px-4 py-12 text-gray-800">
     <h1 class="text-3xl font-bold mb-8">Mentions légales</h1>

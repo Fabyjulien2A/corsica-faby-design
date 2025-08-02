@@ -1,6 +1,10 @@
 @extends('layouts.app') {{-- Adapte selon ton layout --}}
 @section('title', 'Politique de confidentialité')
 
+@section('title', 'Politique de confidentialité | Corsica Faby Design')
+@section('meta_description', 'Politique de confidentialité et gestion des données personnelles collectées via ce site.')
+
+
 @section('content')
 <section class="max-w-4xl mx-auto px-4 py-12 text-gray-800">
     <h1 class="text-3xl font-bold mb-8">Politique de confidentialité</h1>

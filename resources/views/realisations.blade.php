@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Mes réalisations – Sites vitrines & e-commerce en Corse')
-@section('meta_description', 'Découvrez mes réalisations web : sites vitrines et e-commerce conçus sur mesure pour des clients en Corse et ailleurs.')
+@section('title', 'Réalisations | Corsica Faby Design')
+@section('meta_description', 'Exemples de projets réalisés : sites vitrines et e-commerce modernes pour entreprises, artisans et associations.')
+
 
 @section('content')
 <section class="py-16 bg-white pb-20">

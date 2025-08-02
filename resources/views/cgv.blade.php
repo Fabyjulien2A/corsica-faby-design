@@ -1,6 +1,9 @@
 @extends('layouts.app') {{-- Adapte selon ton layout --}}
 @section('title', 'Conditions Générales de Vente')
 
+@section('title', 'Conditions Générales de Vente | Corsica Faby Design')
+@section('meta_description', 'CGV applicables aux prestations de création de sites internet proposées par Corsica Faby Design.')
+
 @section('content')
 <section class="max-w-4xl mx-auto px-4 py-12 text-gray-800">
     <h1 class="text-3xl font-bold mb-8">Conditions Générales de Vente</h1>

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Services web – Création de sites internet en Corse (vitrine, e-commerce, maintenance)')
-@section('meta_description', 'Découvrez mes services de création de site internet en Corse : site vitrine, boutique en ligne, maintenance et accompagnement personnalisé.')
+@section('title', 'Services | Corsica Faby Design')
+@section('meta_description', 'Découvrez mes services web : site vitrine, boutique en ligne, maintenance technique et sécurité pour votre présence digitale.')
+
 
 @section('content')
 <section class="py-16 bg-white">

@@ -4,6 +4,8 @@
 
 @section('content')
 
+@section('title', 'Accueil | Corsica Faby Design')
+@section('meta_description', 'Développeur web en Corse – Création de sites internet modernes, vitrines et e-commerce, adaptés à vos besoins.')
 
 <section class="relative h-[60vh] w-full overflow-hidden">
     <!-- Image -->
