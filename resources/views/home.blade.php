@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-blue-700 mb-1">Site vitrine</h3>
-                <p class="text-lg font-bold text-blue-600 mb-4">À partir de 499 €</p>
+                <p class="text-lg font-bold text-blue-600 mb-4">À partir de 400 €</p>
                 <p class="text-gray-700 mb-6">
                     Un site moderne et responsive pour valoriser votre activité, vos services ou vos événements. 
                     Parfait pour développer votre visibilité locale ou professionnelle.
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold text-green-700 mb-1">E-commerce</h3>
-                <p class="text-lg font-bold text-green-600 mb-4">À partir de 899 €</p>
+                <p class="text-lg font-bold text-green-600 mb-4">À partir de 750 €</p>
                 <p class="text-gray-700 mb-6">
                     Je développe votre boutique en ligne avec paiement sécurisé, gestion de catalogue, 
                     page produit, panier et suivi des commandes.

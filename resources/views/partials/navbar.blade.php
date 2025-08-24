@@ -37,7 +37,6 @@
     <!-- Menu desktop -->
     <ul class="hidden md:flex items-center space-x-10 text-white font-medium text-lg">
       <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a></li>
-      <li><a href="{{ route('services') }}" class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}">Services</a></li>
       <li><a href="{{ route('realisations') }}" class="nav-link {{ request()->routeIs('realisations') ? 'active' : '' }}">Réalisations</a></li>
       <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
     </ul>
