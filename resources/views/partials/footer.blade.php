@@ -3,8 +3,8 @@
 
     <!-- Logo -->
 <a href="{{ route('home') }}" class="hover:opacity-90 transition">
-  <div class="bg-white p-4 rounded-full shadow-lg">
-    <img src="{{ asset('image/Logo-faby.png') }}" 
+  <div class="bg-black p-4 rounded-full shadow-lg">
+    <img src="{{ asset('image/faby.png') }}" 
          alt="Logo Corsica Faby Design" 
          class="h-24 w-auto">
   </div>
@@ -48,6 +48,7 @@
       <a href="{{ url('/mentions-legales') }}" class="hover:text-white transition">Mentions légales</a>
       <a href="{{ url('/confidentialite') }}" class="hover:text-white transition">Politique de confidentialité</a>
       <a href="{{ url('/cgv') }}" class="hover:text-white transition">CGV</a>
+      <a href="{{ url('/contact') }}" class="hover:text-white transition">Contact</a>
     </div>
 
     <!-- Copyright -->

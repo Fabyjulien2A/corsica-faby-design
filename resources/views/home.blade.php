@@ -21,12 +21,12 @@
         
         <!-- Titre impactant avec typewriter -->
         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-            Des <span id="typewriter" class="text-blue-400"></span> pour votre réussite
+            Des <span id="typewriter" class="text-blue-400"></span> pour développer votre activité
         </h1>
 
         <!-- Sous-titre -->
         <p class="mt-4 text-lg max-w-2xl">
-            Je crée des sites vitrines et e-commerce sur mesure, optimisés pour attirer, convaincre et convertir vos visiteurs.
+            Je crée des sites vitrines et e-commerce sur mesure, optimisés pour attirer, convaincre et convertir vos visiteurs.  
         </p>
 
         <!-- Boutons CTA -->

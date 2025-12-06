@@ -28,8 +28,8 @@
 
     <!-- Logo avec fond rond blanc -->
     <a href="{{ route('home') }}" class="block">
-      <div class="bg-white rounded-full p-2 flex items-center justify-center shadow">
-        <img src="{{ asset('image/Logo-faby.png') }}" alt="Corsica Faby Design"
+      <div class="bg-black rounded-full p-2 flex items-center justify-center shadow">
+        <img src="{{ asset('image/faby.png') }}" alt="Corsica Faby Design"
              class="h-24 md:h-28 w-auto">
       </div>
     </a>
@@ -38,7 +38,7 @@
     <ul class="hidden md:flex items-center space-x-10 text-white font-medium text-lg">
       <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a></li>
       <li><a href="{{ route('realisations') }}" class="nav-link {{ request()->routeIs('realisations') ? 'active' : '' }}">Réalisations</a></li>
-      <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
+      <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Me Contacter</a></li>
     </ul>
 
     <!-- Menu burger mobile -->

@@ -7,11 +7,6 @@
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-4 text-center">
 
-    <h1 class="text-4xl font-bold text-gray-800 mb-3">Mes réalisations</h1>
-    <p class="text-lg text-gray-600 mb-12">
-      Voici quelques projets que j’ai réalisés récemment. Cliquez pour en savoir plus.
-    </p>
-
     @php
       // Déclare tes projets ici (titre, type, image, url)
       $projects = [
