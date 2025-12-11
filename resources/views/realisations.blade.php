@@ -11,18 +11,18 @@
       // Déclare tes projets ici (titre, type, image, url)
       $projects = [
         //['title'=>'Amélia Bijoux','type'=>'E-commerce','img'=>'image/amelia-bijoux.png','url'=>'https://ameliabijoux.com/'],
-        ['title'=>'Projet vitrine #1','type'=>'Vitrine','img'=>'image/projet-1.png','url'=>'https://paleturquoise-flamingo-491373.hostingersite.com/'],
-        ['title'=>'Projet #2','type'=>'Vitrine','img'=>'image/projet-2.png','url'=>'https://firebrick-cattle-888553.hostingersite.com/'],
-        ['title'=>'Projet #3','type'=>'Vitrine','img'=>'image/projet-3.png','url'=>'https://lightgrey-quetzal-815688.hostingersite.com/'],
-        ['title'=>'Projet #4','type'=>'E-commerce','img'=>'image/projet-4.png','url'=>'https://skyblue-alligator-346835.hostingersite.com/'],
-        ['title'=>'Projet #5','type'=>'Vitrine','img'=>'image/projet-5.png','url'=>'https://yellowgreen-porcupine-662594.hostingersite.com/'],
-        ['title'=>'Projet #6','type'=>'Vitrine','img'=>'image/projet-6.png','url'=>'https://grey-ant-565986.hostingersite.com/'],
-        ['title'=>'Projet #7','type'=>'Vitrine','img'=>'image/projet-7.png','url'=>'https://darkgoldenrod-caribou-346632.hostingersite.com/'],
-        ['title'=>'Projet #8','type'=>'Vitrine','img'=>'image/projet-8.png','url'=>'https://blanchedalmond-flamingo-515787.hostingersite.com/'],
-        ['title'=>'Projet #9','type'=>'Vitrine','img'=>'image/projet-9.png','url'=>'https://lightslategrey-rat-675736.hostingersite.com/'],
-        ['title'=>'Projet #10','type'=>'Vitrine','img'=>'image/projet-10.png','url'=>'https://orchid-nightingale-571151.hostingersite.com/'],
-        ['title'=>'Projet #11','type'=>'E-commerce','img'=>'image/projet-11.png','url'=>'https://darkblue-chinchilla-582008.hostingersite.com/'],
-        ['title'=>'Projet #12','type'=>'Vitrine','img'=>'image/projet-12.png','url'=>'https://springgreen-starling-598938.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-1.png','url'=>'https://paleturquoise-flamingo-491373.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-2.png','url'=>'https://firebrick-cattle-888553.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-3.png','url'=>'https://lightgrey-quetzal-815688.hostingersite.com/'],
+        ['title'=>'','type'=>'E-commerce','img'=>'image/projet-4.png','url'=>'https://skyblue-alligator-346835.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-5.png','url'=>'https://yellowgreen-porcupine-662594.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-6.png','url'=>'https://grey-ant-565986.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-7.png','url'=>'https://darkgoldenrod-caribou-346632.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-8.png','url'=>'https://blanchedalmond-flamingo-515787.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-9.png','url'=>'https://lightslategrey-rat-675736.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-10.png','url'=>'https://orchid-nightingale-571151.hostingersite.com/'],
+        ['title'=>'','type'=>'E-commerce','img'=>'image/projet-11.png','url'=>'https://darkblue-chinchilla-582008.hostingersite.com/'],
+        ['title'=>'','type'=>'Vitrine','img'=>'image/projet-12.png','url'=>'https://springgreen-starling-598938.hostingersite.com/'],
       ];
 
       // Couleurs de badge selon le type
