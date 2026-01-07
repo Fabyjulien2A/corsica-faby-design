@@ -2,8 +2,7 @@
 <html lang="fr">
 <head>
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-<!-- ou -->
-<link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 
     <meta charset="UTF-8">
     <title>@yield('title', 'Corsica Faby Design – Création de sites web en Corse')</title>
@@ -19,17 +18,37 @@
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Fonts (Inter + Sora) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles globaux typographie -->
+    <style>
+        :root{
+            --font-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            --font-title: 'Sora', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        }
+        body{ font-family: var(--font-body); }
+        .font-title{ font-family: var(--font-title); }
+        /* Optionnel : rendu plus net */
+        html{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    </style>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/xxxxxxx.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- AOS (animations au scroll) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="font-sans text-gray-800">
+
+<body class="text-gray-800">
     @include('partials.navbar')
 
-    <main class="p-4">
+    <!-- Astuce : évite le padding global qui “écrase” le hero full width -->
+    <main>
         @yield('content')
     </main>
 
