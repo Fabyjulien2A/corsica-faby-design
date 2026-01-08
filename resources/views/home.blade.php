@@ -126,7 +126,7 @@
                     Parfait pour développer votre visibilité locale ou professionnelle.
                 </p>
                 <a href="{{ route('contact') }}"
-                    class="inline-block mt-auto bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+                    class="text-center inline-block mt-auto bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
                     Demander un devis
                 </a>
             </div>
@@ -146,7 +146,7 @@
                     page produit, panier et suivi des commandes.
                 </p>
                 <a href="{{ route('contact') }}"
-                    class="inline-block mt-auto bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition">
+                    class="text-center inline-block mt-auto bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition">
                     Créer ma boutique
                 </a>
             </div>
@@ -166,7 +166,7 @@
                     pour garantir la stabilité de votre site.
                 </p>
                 <a href="{{ route('contact') }}"
-                    class="inline-block mt-auto bg-yellow-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-yellow-700 transition">
+                    class="text-center inline-block mt-auto bg-yellow-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-yellow-700 transition">
                     Souscrire à la maintenance
                 </a>
             </div>
