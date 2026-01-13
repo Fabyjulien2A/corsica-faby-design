@@ -33,7 +33,7 @@
          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="#" aria-label="Instagram"
+      <a href="https://www.instagram.com/corsicafabydesign/" target="_blank" aria-label="Instagram"
          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-gray-300 hover:bg-pink-500 hover:text-white transition">
         <i class="fab fa-instagram"></i>
       </a>
