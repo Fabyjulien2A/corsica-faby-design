@@ -15,51 +15,54 @@
         class="absolute inset-0 w-full h-full object-cover z-0"
         style="object-position: center 61%;">
 
-    <!-- Dégradé noir en bas -->
+    <!-- Dégradé noir en bas (inchangé) -->
     <div class="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent"></div>
 
     <!-- Contenu -->
-    <div class="relative z-20 flex flex-col items-center justify-end h-full text-center px-4 pb-12 text-white">
+   <div class="relative z-20 flex flex-col items-center justify-end h-full text-center px-4 pb-16 md:pb-12 text-white">
 
-        <!-- Titre -->
-        <h1 class="font-title text-4xl md:text-5xl font-extrabold leading-tight">
+        <!-- Titre : plus lisible sur mobile -->
+        <h1 class="font-title text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
             Des <span id="typewriter" class="text-blue-400"></span>
             <span class="block">pour développer votre activité</span>
         </h1>
 
-        <!-- Sous-titre -->
-        <p class="mt-4 text-lg max-w-2xl">
+        <!-- Sous-titre : taille + lisibilité mobile -->
+        <p class="mt-3 text-sm sm:text-base md:text-lg max-w-2xl text-white/90 drop-shadow">
             Sites vitrines & e-commerce clés en main, pensés pour attirer des clients et générer des demandes de devis.
         </p>
 
-        <!-- Boutons CTA -->
-        <div class="mt-8 flex justify-center gap-4 flex-wrap">
-            <a href="{{ route('contact') }}"
-                class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition">
-                Obtenir un devis gratuit
-            </a>
+        <!-- Boutons CTA : en colonne sur mobile + gros + pleine largeur -->
+        <div class="mt-5 w-full max-w-sm flex flex-col sm:flex-row justify-center gap-3">
+    <a href="{{ route('contact') }}"
+        class="w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition">
+        Obtenir un devis gratuit
+    </a>
 
-            <a href="{{ route('realisations') }}"
-                class="border border-white/70 text-white/90 px-6 py-3 rounded-lg text-lg font-medium hover:bg-white hover:text-blue-600 transition">
-                Découvrir mes réalisations
-            </a>
-        </div>
+    <a href="{{ route('realisations') }}"
+    class="hidden lg:inline-block border border-white/70 text-white/90 px-6 py-3 rounded-lg text-lg font-medium hover:bg-white hover:text-blue-600 transition">
+    Découvrir mes réalisations
+</a>
+</div>
 
-        <!-- Déclencheur d'appel -->
-        <p class="mt-4 text-sm text-gray-100">
-            Ou appelez-moi directement :
+
+        <!-- Déclencheur d'appel : simplifié en mobile -->
+        <p class="mt-3 text-xs sm:text-sm text-gray-100 drop-shadow hidden sm:block">
+            Ou appelez-moi :
             <a href="tel:+33669547877" class="underline font-semibold hover:text-blue-300">
                 06 69 54 78 77
             </a>
-            <span class="text-gray-200">— appel gratuit, 5 min pour en parler</span>
+            <span class="hidden sm:inline text-gray-200">— appel gratuit, 5 min pour en parler</span>
         </p>
 
-        <!-- Ligne de réassurance -->
-        <p class="mt-6 text-sm text-gray-200">
+        <!-- Ligne de réassurance : cachée sur très petit mobile -->
+        <p class="mt-4 text-xs sm:text-sm text-gray-200 hidden sm:block drop-shadow">
             Devis gratuit sous 24h · Tarifs accessibles · Sites clés en main
         </p>
     </div>
 </section>
+
+
 
 
 <!-- Typewriter Script -->

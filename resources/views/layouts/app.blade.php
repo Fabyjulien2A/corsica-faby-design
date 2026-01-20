@@ -5,6 +5,8 @@
     <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>@yield('title', 'Corsica Faby Design – Création de sites web en Corse')</title>
     <meta name="description" content="@yield('meta_description', 'Développeur web en Corse – Création de site vitrine et e-commerce sur mesure.')">
 
@@ -15,8 +17,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
 
+    <!-- Anti-flash Tailwind CDN -->
+    <style>
+      html { visibility: hidden; }
+    </style>
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.documentElement.style.visibility = 'visible';
+    </script>
 
     <!-- Google Fonts (Inter + Sora) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,14 +41,13 @@
         }
         body{ font-family: var(--font-body); }
         .font-title{ font-family: var(--font-title); }
-        /* Optionnel : rendu plus net */
         html{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     </style>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/xxxxxxx.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-          integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome (garder seulement 1 source, ici le CSS CDN) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- AOS (animations au scroll) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -47,7 +56,6 @@
 <body class="text-gray-800">
     @include('partials.navbar')
 
-    <!-- Astuce : évite le padding global qui “écrase” le hero full width -->
     <main>
         @yield('content')
     </main>
