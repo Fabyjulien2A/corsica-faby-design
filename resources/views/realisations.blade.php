@@ -11,6 +11,7 @@
       // Déclare tes projets ici (titre, type, image, url)
       $projects = [
         //['title'=>'Amélia Bijoux','type'=>'E-commerce','img'=>'image/amelia-bijoux.png','url'=>'https://ameliabijoux.com/'],
+        ['title'=>'','type'=>'SaaS','img'=>'image/projet-13.png','url'=>'https://www.simpledevis.online'],
         ['title'=>'','type'=>'Vitrine','img'=>'image/projet-1.png','url'=>'https://paleturquoise-flamingo-491373.hostingersite.com/'],
         ['title'=>'','type'=>'Vitrine','img'=>'image/projet-2.png','url'=>'https://firebrick-cattle-888553.hostingersite.com/'],
         ['title'=>'','type'=>'Vitrine','img'=>'image/projet-3.png','url'=>'https://lightgrey-quetzal-815688.hostingersite.com/'],
