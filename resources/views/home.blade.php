@@ -9,18 +9,19 @@
 
 <div class="h-4 bg-gradient-to-b from-black/10 to-transparent"></div>
 
-<section class="relative min-h-[700px] lg:min-h-[760px] w-full overflow-hidden">
-    <!-- Image -->
-    <img src="{{ asset('image/photo.png') }}"
-         alt="Illustration développeur web"
-         class="absolute inset-0 w-full h-full object-cover z-0"
-         style="object-position: center 66%;">
+<section class="relative h-[420px] sm:min-h-[650px] lg:min-h-[760px] w-full overflow-hidden">
+        <!-- Image -->
+<img src="{{ asset('image/photo.png') }}"
+     alt="Illustration développeur web"
+     class="absolute inset-0 w-full h-full object-cover z-0
+            object-[center_60%] sm:object-[center_60%] lg:object-[center_66%]">
 
+    <!-- Overlay -->
     <!-- Contenu -->
-    <div class="relative z-20 min-h-[700px] lg:min-h-[760px] flex items-center justify-center px-4 text-white">
+    <div class="relative z-20 min-h-[560px] sm:min-h-[650px] lg:min-h-[760px] flex items-center justify-center px-4 text-white">
         <div class="w-full max-w-4xl text-center mx-auto">
 
-            <h1 class="font-title text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
+            <h1 class="font-title text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
                 Des <span id="typewriter" class="text-blue-400"></span>
                 <span class="block">pour développer votre activité</span>
             </h1>
@@ -29,7 +30,7 @@
                 Sites vitrines & e-commerce clés en main, pensés pour attirer des clients et générer des demandes de devis.
             </p>
 
-            <div class="mt-6 mx-auto w-full max-w-md flex flex-col sm:flex-row justify-center gap-3">
+            <div class="mt-6 mx-auto w-full max-w-sm sm:max-w-md flex flex-col sm:flex-row justify-center gap-3">
                 <a href="{{ route('contact') }}"
                    class="w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition">
                     Obtenir un devis gratuit
