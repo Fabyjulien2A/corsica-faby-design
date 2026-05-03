@@ -9,15 +9,16 @@
 
 <div class="h-4 bg-gradient-to-b from-black/10 to-transparent"></div>
 
+<!-- HERO -->
 <section class="relative h-[420px] sm:min-h-[650px] lg:min-h-[760px] w-full overflow-hidden">
-        <!-- Image -->
-<img src="{{ asset('image/photo.png') }}"
-     alt="Illustration développeur web"
-     class="absolute inset-0 w-full h-full object-cover z-0
-            object-[center_60%] sm:object-[center_60%] lg:object-[center_66%]">
 
-    <!-- Overlay -->
-    <!-- Contenu -->
+    <img src="{{ asset('image/photo.png') }}"
+         alt="Illustration développeur web"
+         class="absolute inset-0 w-full h-full object-cover z-0
+                object-[center_60%] sm:object-[center_60%] lg:object-[center_66%]">
+
+    <div class="absolute inset-0 z-10 bg-black/45"></div>
+
     <div class="relative z-20 min-h-[560px] sm:min-h-[650px] lg:min-h-[760px] flex items-center justify-center px-4 text-white">
         <div class="w-full max-w-4xl text-center mx-auto">
 
@@ -27,7 +28,7 @@
             </h1>
 
             <p class="mt-4 mx-auto text-sm sm:text-base md:text-lg max-w-2xl text-white/90 drop-shadow">
-                Sites vitrines & e-commerce clés en main, pensés pour attirer des clients et générer des demandes de devis.
+                Attirez plus de clients grâce à un site professionnel, moderne et performant.
             </p>
 
             <div class="mt-6 mx-auto w-full max-w-sm sm:max-w-md flex flex-col sm:flex-row justify-center gap-3">
@@ -47,11 +48,6 @@
                 <a href="tel:+33669547877" class="underline font-semibold hover:text-blue-300">
                     06 69 54 78 77
                 </a>
-                <span class="hidden sm:inline text-gray-200">— appel gratuit, 5 min pour en parler</span>
-            </p>
-
-            <p class="mt-3 text-xs sm:text-sm text-gray-200 hidden sm:block drop-shadow">
-                Devis gratuit sous 24h · Tarifs accessibles · Sites clés en main
             </p>
 
         </div>
@@ -59,123 +55,205 @@
 </section>
 
 
-
-<!-- Typewriter Script -->
+<!-- TYPEWRITER -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const words = ["sites modernes", "sites sur mesure", "sites clés en main"];
-        let i = 0;
-        let j = 0;
-        let currentWord = "";
-        let isDeleting = false;
-        const speed = 100; // vitesse d'écriture
-        const eraseSpeed = 50; // vitesse d'effacement
-        const delay = 1500; // pause entre les mots
+document.addEventListener("DOMContentLoaded", function() {
+    const words = ["sites modernes", "sites sur mesure", "sites clés en main"];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
 
-        function type() {
-            currentWord = words[i];
-            if (isDeleting) {
-                document.getElementById("typewriter").textContent = currentWord.substring(0, j--);
-            } else {
-                document.getElementById("typewriter").textContent = currentWord.substring(0, j++);
-            }
+    function type() {
+        currentWord = words[i];
 
-            if (!isDeleting && j === currentWord.length + 1) {
-                isDeleting = true;
-                setTimeout(type, delay);
-            } else if (isDeleting && j === 0) {
-                isDeleting = false;
-                i = (i + 1) % words.length;
-                setTimeout(type, speed);
-            } else {
-                setTimeout(type, isDeleting ? eraseSpeed : speed);
-            }
+        document.getElementById("typewriter").textContent = isDeleting
+            ? currentWord.substring(0, j--)
+            : currentWord.substring(0, j++);
+
+        if (!isDeleting && j === currentWord.length + 1) {
+            isDeleting = true;
+            setTimeout(type, 1500);
+        } else if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % words.length;
+            setTimeout(type, 100);
+        } else {
+            setTimeout(type, isDeleting ? 50 : 100);
         }
+    }
 
-        type();
-    });
+    type();
+});
 </script>
 
 
-
-<!--Section service -->
+<!-- SERVICES -->
 <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
 
-        <!-- Titre -->
         <h2 class="font-title text-3xl md:text-4xl font-bold text-gray-800 mb-12">
             Des solutions digitales adaptées à vos besoins
         </h2>
 
         <div class="grid md:grid-cols-3 gap-8 text-left">
 
-            <!-- Site vitrine -->
-            <div class="p-8 bg-blue-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition transform duration-300 flex flex-col h-full">
-                <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-blue-100">
-                    <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M9.75 3h4.5a.75.75 0 01.75.75v.75h2.25A2.25 2.25 0 0119.5 6.75v12A2.25 2.25 0 0117.25 21H6.75A2.25 2.25 0 014.5 18.75v-12A2.25 2.25 0 016.75 4.5h2.25V3.75a.75.75 0 01.75-.75z" />
-                    </svg>
-                </div>
-                <h3 class="font-title text-xl font-semibold text-blue-700 mb-1">Site vitrine</h3>
-                <p class="text-lg font-bold text-blue-600 mb-4">À partir de 400 €</p>
+            <!-- Vitrine -->
+            <div class="p-8 bg-blue-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+                <h3 class="font-title text-xl font-semibold text-blue-700 mb-2">Site vitrine</h3>
+                <p class="text-lg font-bold text-blue-600 mb-4">Devis personnalisé</p>
                 <p class="text-gray-700 mb-6">
-                    Un site moderne et responsive pour valoriser votre activité, vos services ou vos événements.
-                    Parfait pour développer votre visibilité locale ou professionnelle.
+                    Présentez votre activité avec un site moderne, clair et professionnel pour gagner en visibilité.
                 </p>
-                <a href="{{ route('contact') }}"
-                    class="text-center inline-block mt-auto bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+                <a href="{{ route('contact') }}" class="mt-auto bg-blue-600 text-white px-5 py-2 rounded-lg text-center hover:bg-blue-700">
                     Demander un devis
                 </a>
             </div>
 
-            <!-- E-commerce -->
-            <div class="p-8 bg-green-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition transform duration-300 flex flex-col h-full">
-                <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-100">
-                    <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.6 8h12.2M7 13L5.4 5M17 13l1.6 8M9 21a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z" />
-                    </svg>
-                </div>
-                <h3 class="font-title text-xl font-semibold text-green-700 mb-1">E-commerce</h3>
-                <p class="text-lg font-bold text-green-600 mb-4">À partir de 750 €</p>
+            <!-- Ecommerce -->
+            <div class="p-8 bg-green-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+                <h3 class="font-title text-xl font-semibold text-green-700 mb-2">E-commerce</h3>
+                <p class="text-lg font-bold text-green-600 mb-4">Solution sur mesure</p>
                 <p class="text-gray-700 mb-6">
-                    Je développe votre boutique en ligne avec paiement sécurisé, gestion de catalogue,
-                    page produit, panier et suivi des commandes.
+                    Vendez en ligne avec une boutique performante et adaptée à votre activité.
                 </p>
-                <a href="{{ route('contact') }}"
-                    class="text-center inline-block mt-auto bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition">
+                <a href="{{ route('contact') }}" class="mt-auto bg-green-600 text-white px-5 py-2 rounded-lg text-center hover:bg-green-700">
                     Créer ma boutique
                 </a>
             </div>
 
             <!-- Maintenance -->
-            <div class="p-8 bg-yellow-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition transform duration-300 flex flex-col h-full">
-                <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-yellow-100">
-                    <svg class="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M11.25 3.75a.75.75 0 01.75 0l7.5 4.25a.75.75 0 010 1.3l-7.5 4.25a.75.75 0 01-.75 0l-7.5-4.25a.75.75 0 010-1.3L11.25 3.75zM4.5 10.5l6.75 3.825a.75.75 0 00.75 0L18.75 10.5M4.5 14.25l6.75 3.825a.75.75 0 00.75 0L18.75 14.25" />
-                    </svg>
-                </div>
-                <h3 class="font-title text-xl font-semibold text-yellow-700 mb-1">Maintenance</h3>
-                <p class="text-lg font-bold text-yellow-600 mb-4">À partir de 29 €/mois</p>
+            <div class="p-8 bg-yellow-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+                <h3 class="font-title text-xl font-semibold text-yellow-700 mb-2">Maintenance</h3>
+                <p class="text-lg font-bold text-yellow-600 mb-4">Maintenance adaptée</p>
                 <p class="text-gray-700 mb-6">
-                    Je m’occupe des mises à jour, sauvegardes, sécurité et de l’assistance technique
-                    pour garantir la stabilité de votre site.
+                    Je m’occupe de la sécurité, des mises à jour et du bon fonctionnement de votre site.
                 </p>
-                <a href="{{ route('contact') }}"
-                    class="text-center inline-block mt-auto bg-yellow-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-yellow-700 transition">
-                    Souscrire à la maintenance
+                <a href="{{ route('contact') }}" class="mt-auto bg-yellow-600 text-white px-5 py-2 rounded-lg text-center hover:bg-yellow-700">
+                    Souscrire
                 </a>
             </div>
+
         </div>
-
-
     </div>
-
 </section>
 
 
+<!-- Section avantages premium -->
+<section class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
 
+        <div class="text-center mb-14">
+            <span class="inline-block text-blue-600 font-semibold mb-3">
+                Un accompagnement simple et efficace
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                Pourquoi travailler avec moi ?
+            </h2>
+
+            <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+                Je vous accompagne dans la création d’un site clair, professionnel et pensé pour développer votre visibilité.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="w-12 h-12 mb-5 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
+                    ✓
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Accompagnement complet
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    De l’idée à la mise en ligne, je vous guide à chaque étape pour créer un site adapté à votre activité.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="w-12 h-12 mb-5 rounded-xl bg-green-100 text-green-600 flex items-center justify-center">
+                    ⚡
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Site moderne et efficace
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Un design soigné, responsive et orienté client pour donner une image professionnelle à votre entreprise.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="w-12 h-12 mb-5 rounded-xl bg-yellow-100 text-yellow-600 flex items-center justify-center">
+                    ★
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Solution adaptée
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Chaque projet est différent : je propose une solution personnalisée selon vos besoins, vos objectifs et votre budget.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Section à propos premium -->
+<section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+            <span class="inline-block text-blue-600 font-semibold mb-3">
+                À propos
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Un développeur web à votre écoute
+            </h2>
+
+            <p class="text-gray-700 leading-relaxed mb-5">
+                Je m’appelle Julien, développeur web basé en Corse. Avec Corsica Faby Design, j’aide les entrepreneurs, artisans et petites entreprises à créer une présence en ligne claire, moderne et professionnelle.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed mb-8">
+                Mon objectif est simple : vous proposer un site qui reflète votre activité, inspire confiance et vous aide à attirer de nouveaux clients.
+            </p>
+
+            <a href="{{ route('contact') }}"
+               class="inline-block bg-blue-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Me contacter
+            </a>
+        </div>
+
+        <div class="bg-gray-50 rounded-3xl p-8 shadow-sm">
+            <h3 class="text-xl font-bold text-gray-900 mb-6">
+                Ce que je privilégie dans chaque projet
+            </h3>
+
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">✓</span>
+                    Une communication simple et transparente
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">✓</span>
+                    Un site adapté aux mobiles et facile à utiliser
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">✓</span>
+                    Un accompagnement même après la mise en ligne
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">✓</span>
+                    Une solution pensée selon votre activité
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
 @endsection
