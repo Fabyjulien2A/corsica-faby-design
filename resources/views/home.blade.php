@@ -17,7 +17,6 @@
          class="absolute inset-0 w-full h-full object-cover z-0
                 object-[center_60%] sm:object-[center_60%] lg:object-[center_66%]">
 
-    <div class="absolute inset-0 z-10 bg-black/45"></div>
 
     <div class="relative z-20 min-h-[560px] sm:min-h-[650px] lg:min-h-[760px] flex items-center justify-center px-4 text-white">
         <div class="w-full max-w-4xl text-center mx-auto">

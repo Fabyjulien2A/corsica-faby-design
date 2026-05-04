@@ -35,11 +35,21 @@
     </a>
 
     <!-- Menu desktop -->
-    <ul class="hidden md:flex items-center space-x-10 text-white font-medium text-lg">
-      <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a></li>
-      <li><a href="{{ route('realisations') }}" class="nav-link {{ request()->routeIs('realisations') ? 'active' : '' }}">Réalisations</a></li>
-      <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Me Contacter</a></li>
-    </ul>
+    <ul class="hidden md:flex items-center space-x-8 text-white font-medium text-lg">
+  <li>
+    <a href="{{ route('realisations') }}"
+       class="nav-link {{ request()->routeIs('realisations') ? 'active' : '' }}">
+      Réalisations
+    </a>
+  </li>
+
+  <li>
+    <a href="{{ route('contact') }}"
+       class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition shadow-md">
+      Devis gratuit
+    </a>
+  </li>
+</ul>
 
     <!-- Menu burger mobile -->
     <button id="menu-btn" class="md:hidden p-2 -mr-2 text-white" aria-label="Ouvrir le menu">
@@ -51,14 +61,23 @@
   </div>
 
   <!-- Menu mobile -->
-  <div id="mobile-menu" class="hidden md:hidden border-t bg-gray-900 text-white">
-    <ul class="px-6 py-6 space-y-4 font-medium text-lg">
-      <li><a href="{{ route('home') }}" class="block hover:text-blue-400">Accueil</a></li>
-      <li><a href="{{ route('services') }}" class="block hover:text-blue-400">Services</a></li>
-      <li><a href="{{ route('realisations') }}" class="block hover:text-blue-400">Réalisations</a></li>
-      <li><a href="{{ route('contact') }}" class="block hover:text-blue-400">Contact</a></li>
-    </ul>
-  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-gray-900 text-white">
+  <ul class="px-6 py-6 space-y-4 font-medium text-lg">
+    <li>
+      <a href="{{ route('realisations') }}" class="block hover:text-blue-400">
+        Réalisations
+      </a>
+    </li>
+    <li>
+      <a href="{{ route('contact') }}"
+         class="block bg-blue-600 text-white text-center px-5 py-3 rounded-lg hover:bg-blue-700 transition">
+        Demander un devis gratuit
+      </a>
+    </li>
+  </ul>
+</div>
+
+
 </nav>
 
 
