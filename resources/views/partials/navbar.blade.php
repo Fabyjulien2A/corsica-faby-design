@@ -37,10 +37,6 @@
     <!-- Menu desktop -->
     <ul class="hidden md:flex items-center space-x-8 text-white font-medium text-lg">
   <li>
-    <a href="{{ route('realisations') }}"
-       class="nav-link {{ request()->routeIs('realisations') ? 'active' : '' }}">
-      Réalisations
-    </a>
   </li>
 
   <li>

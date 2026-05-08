@@ -35,11 +35,6 @@
                    class="w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg text-base sm:text-lg font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition">
                     Obtenir un devis gratuit
                 </a>
-
-                <a href="{{ route('realisations') }}"
-                   class="hidden lg:inline-block border border-white/70 text-white/90 px-6 py-3 rounded-lg text-lg font-medium hover:bg-white hover:text-blue-600 transition">
-                    Découvrir mes réalisations
-                </a>
             </div>
 
             <p class="mt-4 text-xs sm:text-sm text-gray-100 drop-shadow hidden sm:block">
@@ -121,17 +116,27 @@ document.addEventListener("DOMContentLoaded", function() {
                 </a>
             </div>
 
-            <!-- Maintenance -->
-            <div class="p-8 bg-yellow-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
-                <h3 class="font-title text-xl font-semibold text-yellow-700 mb-2">Maintenance</h3>
-                <p class="text-lg font-bold text-yellow-600 mb-4">Maintenance adaptée</p>
-                <p class="text-gray-700 mb-6">
-                    Je m’occupe de la sécurité, des mises à jour et du bon fonctionnement de votre site.
-                </p>
-                <a href="{{ route('contact') }}" class="mt-auto bg-yellow-600 text-white px-5 py-2 rounded-lg text-center hover:bg-yellow-700">
-                    Souscrire
-                </a>
-            </div>
+            <!-- Applications web -->
+<div class="p-8 bg-purple-50 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+    <h3 class="font-title text-xl font-semibold text-purple-700 mb-2">
+        Applications web sur mesure
+    </h3>
+
+    <p class="text-lg font-bold text-purple-600 mb-4">
+        Solution personnalisée
+    </p>
+
+    <p class="text-gray-700 mb-6">
+    Développement d’outils web sur mesure :
+    espace client, réservation, dashboard,
+    SaaS et automatisations.
+</p>
+
+    <a href="{{ route('contact') }}"
+       class="mt-auto bg-purple-600 text-white px-5 py-2 rounded-lg text-center hover:bg-purple-700">
+        Discuter de mon projet
+    </a>
+</div>
 
         </div>
     </div>
