@@ -37,13 +37,6 @@
                 </a>
             </div>
 
-            <p class="mt-4 text-xs sm:text-sm text-gray-100 drop-shadow hidden sm:block">
-                Ou appelez-moi :
-                <a href="tel:+33669547877" class="underline font-semibold hover:text-blue-300">
-                    06 69 54 78 77
-                </a>
-            </p>
-
         </div>
     </div>
 </section>

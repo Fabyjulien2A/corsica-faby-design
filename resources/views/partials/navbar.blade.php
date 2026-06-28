@@ -60,11 +60,6 @@
   <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-gray-900 text-white">
   <ul class="px-6 py-6 space-y-4 font-medium text-lg">
     <li>
-      <a href="{{ route('realisations') }}" class="block hover:text-blue-400">
-        Réalisations
-      </a>
-    </li>
-    <li>
       <a href="{{ route('contact') }}"
          class="block bg-blue-600 text-white text-center px-5 py-3 rounded-lg hover:bg-blue-700 transition">
         Demander un devis gratuit
